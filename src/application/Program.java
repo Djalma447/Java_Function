@@ -19,7 +19,7 @@ public class Program {
 		list.add(new Product("Mafia III", 48.50));
 		list.add(new Product("Xcom 2", 9.99));
 		
-		List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
+		List<String> names = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
 
